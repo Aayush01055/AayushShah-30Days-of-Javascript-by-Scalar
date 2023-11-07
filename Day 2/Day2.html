@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Day2</title>
+    </head>
+
+    <body>
+        <h1>Capitalize First Letters</h1>
+        <input type="text" id="inputString" placeholder="Enter a string">
+        <button onclick="capitalizeFirstLetters()">Capitalize</button>
+        <p id="output"></p>
+
+        <script>
+            function capitalizeFirstLetters() {
+            // Get the input string from the input field
+            const inputString = document.getElementById('inputString').value;
+
+            // Capitalize the first letter of each word
+            const capitalizedString = inputString.split(' ')
+                .map(word => word[0].toUpperCase() + word.slice(1))
+                .join(' ');
+
+            // Display the capitalized string in the output paragraph
+            const outputParagraph = document.getElementById('output');
+            outputParagraph.textContent = `Capitalized string: ${capitalizedString}`;
+            }
+        </script>
+    </body>
+</html>
