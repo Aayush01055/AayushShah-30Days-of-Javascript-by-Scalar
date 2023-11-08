@@ -1,2 +1,2 @@
-# 30 Days of Javascript by x Scalar Topics Codes
+# 30 Days of Javascript x Scalar Topics Codes
 ### By Aayush Shah
